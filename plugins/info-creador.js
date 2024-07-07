@@ -1,8 +1,8 @@
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
 let suittag = global.suittag.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').filter(v => v != conn.user.jid) 
-let helpers = global.helpers.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').filter(v => v != conn.user.jid) 
-let teks = `▢ *المطورين*\n─────────────\n` + suittag.map(v => '- @' + v.replace(/@.+/, '')).join`\n\n▢ *المساعدين*\n─────────────\n` + helpers.map(v => '- @' + v.replace(/@.+/, '')).join`\n`
+let mods = global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').filter(v => v != conn.user.jid) 
+let teks = `▢ *المطورين*\n─────────────\n` + suittag.map(v => '- @' + v.replace(/@.+/, '')).join`\n\n▢ *المساعدين*\n─────────────\n` + mods.map(v => '- @' + v.replace(/@.+/, '')).join`\n`
 m.reply(teks, null, {mentions: conn.parseMention(teks)})
 
 }
