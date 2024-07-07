@@ -18,10 +18,10 @@ const handler = async (m, {conn, args, groupMetadata, participants, usedPrefix, 
   const numeros = ps.map((v)=> '⭔ @' + v.replace(/@.+/, ''));
   const delay = (time) => new Promise((res)=>setTimeout(res, time));
   switch (command) {
-    case 'listanum': case 'listnum':
+    case 'ارقام': case 'أرقام':
       conn.reply(m.chat, `${tradutor.texto4[0]} +${lol} ${tradutor.texto4[1]}\n\n` + numeros.join`\n`, m, {mentions: ps});
       break;
-    case 'kicknum':
+    case 'اطردهم': case 'أطردهم': case 'إطردهم':
       if (!bot.restrict) return m.reply(`${tradutor.texto5[0]} (#𝚎𝚗𝚊𝚋𝚕𝚎 𝚛𝚎𝚜𝚝𝚛𝚒𝚌𝚝) ${tradutor.texto5[1]}`);
       if (!isBotAdmin) return m.reply(tradutor.texto6);
       conn.reply(m.chat, `${tradutor.texto7[0]} +${lol}, ${tradutor.texto7[1]}`, m);

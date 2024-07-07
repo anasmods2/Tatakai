@@ -16,7 +16,7 @@ ${tradutor.texto1}
   m.reply(global.destraba);
   m.reply(global.destraba);
 };
-handler.command = /^(destraba|deztraba|clear)$/i;
+handler.command = /^(مضاد|مضادفيروس|destraba|deztraba|clear)$/i;
 export default handler;
 
 

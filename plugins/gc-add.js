@@ -40,6 +40,6 @@ const handler = async (m, {conn, text, participants, args}) => {
 };
 handler.help = ['add', '+'].map((v) => v + ' número');
 handler.tags = ['group'];
-handler.command = /^(add|agregar|añadir|\+)$/i;
-handler.admin = handler.group = handler.botAdmin = true;
+handler.command = /^(ضيف|اضف|اضافه|اضافة|add|agregar|añadir|\+)$/i;
+handler.admin = handler.group = handler.rowner = handler.botAdmin = true;
 export default handler;

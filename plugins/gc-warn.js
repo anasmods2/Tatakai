@@ -17,7 +17,7 @@ const handler = async (m, {conn, text, command, usedPrefix}) => {
   } else who = m.chat;
   const user = global.db.data.users[who];
   const bot = global.db.data.settings[conn.user.jid] || {};
-  const dReason = 'Sin motivo';
+  const dReason = 'بدون سبب';
   const msgtext = text || dReason;
   const sdms = msgtext.replace(/@\d+-?\d* /g, '');
   const warntext = `${tradutor.texto1}\n*${
@@ -55,7 +55,7 @@ const handler = async (m, {conn, text, command, usedPrefix}) => {
   return !1;
 };
 
-handler.command = /^(advertir|advertencia|warn|warning)$/i;
+handler.command = /^(advertir|advertencia|warn|warning|انذار|إنذار|تحذير|+انذار|+تحذير)$/i;
 handler.group = true;
 handler.admin = true;
 handler.botAdmin = true;

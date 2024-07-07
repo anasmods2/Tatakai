@@ -6,28 +6,28 @@ const handler = async (m, {conn, args, usedPrefix, command}) => {
   const tradutor = _translate.plugins.gc_config
 
   const isClose = { // Switch Case Like :v
-    'open': 'not_announcement',
-    'close': 'announcement',
-    'abierto': 'not_announcement',
-    'cerrado': 'announcement',
-    'abrir': 'not_announcement',
-    'cerrar': 'announcement',
+    'فتح': 'not_announcement',
+    'قفل': 'announcement',
+    'افتح': 'not_announcement',
+    'اغلاق': 'announcement',
+    'افتح': 'not_announcement',
+    'اغلق': 'announcement',
   }[(args[0] || '')];
   if (isClose === undefined) {
     throw `
 ${tradutor.texto1[0]}
 
 ${tradutor.texto1[1]}
-*┠┉↯ ${usedPrefix + command} abrir*
-*┠┉↯ ${usedPrefix + command} cerrar*
+*┠┉↯ ${usedPrefix + command} قفل*
+*┠┉↯ ${usedPrefix + command} فتح*
 `.trim();
   }
   await conn.groupSettingUpdate(m.chat, isClose);
-  {m.reply(`${tradutor.texto1[0]}`);}
+  {m.reply(`⎈ تم اعداد الأمر`);}
 };
-handler.help = ['group open / close', 'grupo abrir / cerrar'];
+handler.help = ['جروب فتح / قفل', 'جروب افتح / اغلق'];
 handler.tags = ['group'];
-handler.command = /^(group|grupo)$/i;
+handler.command = /^(group|grupo|جروب|قروب|مجموعه|مجموعة)$/i;
 handler.admin = true;
 handler.botAdmin = true;
 export default handler;
