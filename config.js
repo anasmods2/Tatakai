@@ -19,10 +19,11 @@ global.owner = [
 ];
 
 global.suittag = ['967781994494', '967736249487'];
+global.helpers = ['963945833292', '967738123842'];
 global.prems = ['967781994494', '967736249487'];
 
-global.packname = 'Sticker';
-global.author = 'Anas Mods';
+global.packname = '꜃ʸᵃᵗᵒ ᵇᵒᵗ ᵐᵈ꜅';
+global.author = '˹ᵃⁿᵃˢ ᵐᵒᵈˢ˺';
 global.wm = 'Yato Bot ♥';
 global.titulowm = 'Yato Bot ♥';
 global.titulowm2 = `Yato Bot ♥`
