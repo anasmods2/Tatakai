@@ -19,7 +19,6 @@ global.owner = [
 ];
 
 global.suittag = ['967781994494', '967736249487'];
-global.helpers = ['963945833292', '967738123842'];
 global.prems = ['967781994494', '967736249487'];
 
 global.packname = '꜃ʸᵃᵗᵒ ᵇᵒᵗ ᵐᵈ꜅';
@@ -41,7 +40,7 @@ global.imagen8 = fs.readFileSync('./src/menu_fr.png')
 global.imagen9 = fs.readFileSync('./src/menu_en.png')
 global.imagen10 = fs.readFileSync('./src/menu_ru.png')
 
-global.mods = [];
+global.mods = ['963945833292', '967738123842'];
 
 //* *******Tiempo***************
 global.d = new Date(new Date + 3600000);
