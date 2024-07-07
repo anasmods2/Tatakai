@@ -26,5 +26,5 @@ const handler = async (m, {conn, text}) => {
 };
 handler.help = ['wm <packname>|<author>'];
 handler.tags = ['sticker'];
-handler.command = /^take|robar|wm$/i;
+handler.command = /^take|robar|wm|حقوق|سرقه|سرقة$/i;
 export default handler;

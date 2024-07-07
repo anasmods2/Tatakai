@@ -22,12 +22,6 @@ ${tradutor.texto2[3]}
 
 --------------------------------
 
-${tradutor.texto3[0]} | MODOHORNY
-${tradutor.texto3[1]} ${usedPrefix + command} modohorny
-${tradutor.texto3[2]}
-
---------------------------------
-
 ${tradutor.texto4[0]} | ANTILINK
 ${tradutor.texto4[1]} ${usedPrefix + command} antilink
 ${tradutor.texto4[2]}
