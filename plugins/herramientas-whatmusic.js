@@ -29,7 +29,7 @@ const handler = async (m) => {
 
     const apiTitle = `${title} - ${subtitle || ''}`;
 
-    let url = 'https://github.com/BrunoSobrino'; 
+    let url = 'https://whatsapp.com/channel/0029VaEvarZ47XeGMKmNbs3y'; 
     try {
       const response = await fetch(`${global.MyApiRestBaseUrl}/api/ytplay?text=${apiTitle}&apikey=${global.MyApiRestApikey}`);
       const data = await response.json();
@@ -51,5 +51,5 @@ const handler = async (m) => {
   }
 };
 
-handler.command = /^(quemusica|quemusicaes|whatmusic|shazam)$/i;
+handler.command = /^(quemusica|quemusicaes|whatmusic|shazam|صوت-الاغنيه|الاغنيه|الأغنيه|الاغنية|الأغنية)$/i;
 export default handler;

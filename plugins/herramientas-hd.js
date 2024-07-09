@@ -21,9 +21,9 @@ const handler = async (m, {conn, usedPrefix, command}) => {
   throw tradutor.texto4;
  }
 };
-handler.help = ["remini", "hd", "enhance"];
+handler.help = ["جودة", "hdr", "جوده"];
 handler.tags = ["ai", "tools"];
-handler.command = ["remini", "hd", "enhance"];
+handler.command = ["جودة", "hdr", "جوده"];
 export default handler;
 
 async function remini(imageData, operation) {

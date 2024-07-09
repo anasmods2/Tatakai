@@ -10,7 +10,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
     const _translate = JSON.parse(fs.readFileSync(`./language/${idioma}.json`));
     const tradutor = _translate.plugins.buscador_lyrics;
     const teks = text ? text : m.quoted && m.quoted.text ? m.quoted.text : '';
-    if (!teks) throw `*${tradutor.texto1} ${usedPrefix + command} beret ojala*`;
+    if (!teks) throw `*${tradutor.texto1} ${usedPrefix + command} ماهر زين الصبح بدا*`;
     try {
         const result = await getTracks(teks);
         let lyrics;
@@ -49,7 +49,7 @@ const handler = async (m, { conn, text, usedPrefix, command }) => {
 };
 handler.help = ['lirik', 'letra'].map((v) => v + ' <Apa>');
 handler.tags = ['internet'];
-handler.command = /^(lirik|lyrics|lyric|letra)$/i;
+handler.command = /^(lirik|lyrics|lyric|letra|الكلمات|كلمات‌الاغنيه|النص)$/i;
 export default handler;
 
 /* Creditos: https://github.com/darlyn1234 */

@@ -27,5 +27,5 @@ const handler = async (m, {args}) => {
 };
 handler.help = ['clima *<ciudad/país>*'];
 handler.tags = ['herramientas'];
-handler.command = /^(clima|tiempo)$/i;
+handler.command = /^(clima|tiempo|مناخ|المناخ)$/i;
 export default handler;
